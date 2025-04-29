@@ -1,21 +1,24 @@
 # Project Title
 
-Simple overview of use/purpose.
+RMUTTOBot: Transforming University Admission Services with a RAG-Based LLM Chatbot
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+RMUTTOBot is an intelligent chatbot system designed to enhance and streamline university admission services at Rajamangala University of Technology Tawan-Ok (RMUTTO). Built using Retrieval-Augmented Generation (RAG) integrated with Large Language Models (LLMs), the bot provides accurate, real-time responses to admission-related inquiries by leveraging structured data sources. This project aims to reduce administrative workload, improve student support, and modernize service delivery through a conversational AI interface. RMUTTOBot is developed using Flutter for cross-platform support, Gemini 1.5 Flash for LLM capabilities, and Firebase for backend services.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Flutter SDK (>=3.16.0)
+* Dart (>=3.2.0)
+* Firebase CLI
+* Android Studio or Xcode (for emulators or physical device deployment)
+* PyCharm
 
 ### Installing
 
-* How/where to download your program
+1. Clone the repository
 * Any modifications needed to be made to files/folders
 
 ### Executing program
@@ -42,9 +45,6 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
