@@ -19,29 +19,57 @@ RMUTTOBot is an intelligent chatbot system designed to enhance and streamline un
 ### Installing
 
 1. Clone the repository
-* Any modifications needed to be made to files/folders
+```
+git clone https://github.com/vipa-thananant/RMUTTOBot.git
+cd rmuttobot
+```
+2. Install dependencies
+```
+flutter pub get
+```
+3. Set up Firebase
+   
+* Create a Firebase project at https://console.firebase.google.com
+* Download the google-services.json (Android) or GoogleService-Info.plist (iOS) and place them in the correct directories (android/app or ios/Runner)
 
+4. Set up API variables for Gemini API and Firebase
+```
+class GeminiConfig {
+  static const String apiKey = "your Gemini api key here";
+}
+class Config {
+  static const String apiKey = "Firebase API key here";
+  static const String authDomain = "Firebase domain here";
+  static const String projectId = "Firebase projectID here";
+  static const String storageBucket = "Firebase storageBucket here";
+  static const String messagingSenderId = "id here";
+  static const String appId = "app id here";
+}
+```
 ### Executing program
-
-* How to run the program
-* Step-by-step bullets
+To run the chatbot on a device or emulator or other platforms:
+1. Run python 
+* Run main.py in PyCharm
+* Run FastAPI server type command
 ```
-code blocks for commands
+uvicorn main:app –reload
 ```
-
+2. Run Flutter   
+```
+flutter run
+```
 ## Help
-
-Any advise for common problems or issues.
+For common issues:
+* Ensure all Firebase dependencies are correctly initialized.
+* Check the internet connection if the chatbot doesn’t respond.
+* Use this command for general Flutter diagnostics:
 ```
-command to run if program contains helper info
+flutter doctor
 ```
 
 ## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Vipa Thananant
+Contact: vipa_th@rmutto.ac.th
 
 ## Version History
 
@@ -50,13 +78,5 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
