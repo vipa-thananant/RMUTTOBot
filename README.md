@@ -21,7 +21,7 @@ RMUTTOBot is an intelligent chatbot system designed to enhance and streamline un
 1. Clone the repository
 ```
 git clone https://github.com/vipa-thananant/RMUTTOBot.git
-cd rmuttobot
+cd RMUTTOBot
 ```
 2. Install dependencies
 ```
