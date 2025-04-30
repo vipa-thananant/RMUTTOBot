@@ -51,7 +51,7 @@ class Config {
 To run the chatbot:
 1. Run Python code 
 * Run main.py in PyCharm
-* Run FastAPI server type command
+* run uvicorn command to start FastAPI server
 ```
 uvicorn main:app –reload
 ```
