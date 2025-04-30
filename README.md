@@ -1,4 +1,4 @@
-# Project Title
+# Research Title
 
 RMUTTOBot: Transforming University Admission Services with a RAG-Based LLM Chatbot
 
@@ -33,6 +33,7 @@ flutter pub get
 * Download the google-services.json (Android) or GoogleService-Info.plist (iOS) and place them in the correct directories (android/app or ios/Runner)
 
 4. Set up API variables for Gemini API and Firebase
+   Replace your own API in class GeminiConfig
 ```
 class GeminiConfig {
   static const String apiKey = "your Gemini api key here";
@@ -47,14 +48,22 @@ class Config {
 }
 ```
 ### Executing program
-To run the chatbot on a device or emulator or other platforms:
+To run the chatbot:
 1. Run python 
 * Run main.py in PyCharm
 * Run FastAPI server type command
 ```
 uvicorn main:app –reload
 ```
-2. Run Flutter   
+2. Rewrite the logic in HomeScreen.dart to ensure it always loads data from Firebase instead of mock data, using useFirebase: true.
+```
+if (allFaqList.isEmpty)
+   {
+      // Load FAQ data if it hasn't been loaded yet
+      await loadFaqDataOnce(useFirebase: true);
+   }
+```   
+3. Run Flutter   
 ```
 flutter run
 ```
