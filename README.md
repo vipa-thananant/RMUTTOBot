@@ -49,7 +49,7 @@ class Config {
 ```
 ### Executing program
 To run the chatbot:
-1. Run python 
+1. Run Python code 
 * Run main.py in PyCharm
 * Run FastAPI server type command
 ```
@@ -63,7 +63,7 @@ if (allFaqList.isEmpty)
       await loadFaqDataOnce(useFirebase: true);
    }
 ```   
-3. Run Flutter   
+3. Run Flutter code  
 ```
 flutter run
 ```
