@@ -33,7 +33,7 @@ flutter pub get
 * Download the google-services.json (Android) or GoogleService-Info.plist (iOS) and place them in the correct directories (android/app or ios/Runner)
 
 4. Set up API variables for Gemini API and Firebase
-   Replace your own API in class GeminiConfig
+ * Replace your own API in class GeminiConfig
 ```
 class GeminiConfig {
   static const String apiKey = "your Gemini api key here";
