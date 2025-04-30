@@ -89,4 +89,3 @@ Contact: vipa_th@rmutto.ac.th
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
->>>>>>> 5a32a2570e610d03f225191ddebf7ba051626310
